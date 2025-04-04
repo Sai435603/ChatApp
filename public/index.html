@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chat-App</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png">
+  
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="main">
+    <!-- Header section with name input -->
+    <div class="name">
+      <i class="fa fa-user-circle"></i>
+      <input type="text" name="username" class="username" value="Anonymous" maxlength="20" />
+      <!-- Total clients info -->
+       <div class="status">
+        <div class="online"> 
+          <h2 class="online-mark">•</h2>&nbsp;
+          <h3 class="total-clients">0 online</h3>
+       </div>
+      <!-- Typing indicator -->
+      <span class="typing">Someone is typing a message...</span>
+    </div>
+    </div>
+
+    <!-- Chat body -->
+    <div class="chat">
+      <!-- Message list -->
+      <ul class="message-container">
+        <li class="message-left">
+          <p class="message">
+            Hello from someone else!
+            <span>John • 2:30 PM</span>
+          </p>
+        </li>
+        <li class="message-right">
+          <p class="message">
+            Hello John!
+            <span>You • 2:31 PM</span>
+          </p>
+        </li>
+      </ul>
+      <!-- Message input form -->
+      <form class="message-form">
+        <input type="text" name="message" class="message-input" placeholder="Type a message..." required />
+        <button type="submit" class="send-message">Send
+          <i class="fa fa-paper-plane" aria-hidden="true"></i>
+        </button>
+      </form>
+      
+    </div>
+  </div>
+</body>
+</html>
